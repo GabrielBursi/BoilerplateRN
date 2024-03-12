@@ -1,28 +1,26 @@
 export const theme = {
-	grid: {
-		container: '130rem',
-		gutter: '3.2rem',
-	},
 	border: {
 		radius: {
-			big: '5rem',
-			small: '0.4rem',
+			big: 10,
+			small: 4,
 		},
 	},
 	font: {
-		family:
-			"Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+		family: {
+			default:
+				"Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+		},
 		light: 300,
 		normal: 400,
 		bold: 600,
 		sizes: {
-			xsmall: '1.2rem',
-			small: '1.4rem',
-			medium: '1.6rem',
-			large: '1.8rem',
-			xlarge: '2.0rem',
-			xxlarge: '2.8rem',
-			huge: '5rem',
+			xsmall: 12,
+			small: 14,
+			medium: 16,
+			large: 18,
+			xlarge: 20,
+			xxlarge: 28,
+			huge: 50,
 		},
 	},
 	colors: {
@@ -36,13 +34,13 @@ export const theme = {
 		white: '#fff',
 	},
 	spacings: {
-		xxsmall: '0.8rem',
-		xsmall: '1.6rem',
-		small: '2.4rem',
-		medium: '3.2rem',
-		large: '4.0rem',
-		xlarge: '4.8rem',
-		xxlarge: '5.6rem',
+		xxsmall: 4,
+		xsmall: 8,
+		small: 16,
+		medium: 24,
+		large: 32,
+		xlarge: 40,
+		xxlarge: 48,
 	},
 	layers: {
 		base: 10,
@@ -51,13 +49,15 @@ export const theme = {
 		modal: 40,
 		alwaysOnTop: 50,
 	},
-	transition: {
-		default: '0.3s ease-in-out',
-		fast: '0.1s ease-in-out',
+	elevation: {
+		small: 2,
+		medium: 4,
+		large: 8,
+		xlarge: 16,
 	},
-	breakpoints: {
-		smallHeight: '599px',
-		mediumHeight: '899px',
-		largeHeight: '900px',
+	opacity: {
+		low: 0.5,
+		medium: 0.7,
+		high: 0.9,
 	},
 } as const
