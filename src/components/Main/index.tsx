@@ -5,7 +5,7 @@ import * as S from './styles'
 export const Main = () => {
 	return (
 		<S.Main>
-			<Text>Main</Text>
+			<Text accessibilityRole="text">Main</Text>
 		</S.Main>
 	)
 }

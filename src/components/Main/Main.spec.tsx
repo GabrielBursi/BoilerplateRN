@@ -6,6 +6,6 @@ describe('<Main/>', () => {
 	it('should render', () => {
 		customRender(<Main />)
 
-		expect(screen.getByRole('heading', { name: /Main/i })).toBeOnTheScreen()
+		expect(screen.getByRole('text', { name: /Main/i })).toBeOnTheScreen()
 	})
 })
