@@ -93,7 +93,7 @@
 		"@storybook/addon-react-native-web": "^0.0.19",
 		"@storybook/builder-webpack5": "^6.5.16",
 		"@storybook/manager-webpack5": "^6.5.16",
-		"@storybook/react": "^6.5.14",
+		"@storybook/react": "^8.0.8",
 		"@storybook/react-native": "^6.5.1",
 		"@storybook/testing-library": "^0.0.13",
 		"@testing-library/jest-native": "^5.4.3",
