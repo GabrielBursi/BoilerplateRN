@@ -8,7 +8,14 @@ import { ThemeProvider } from 'styled-components/native'
 import { theme } from '@/styles'
 
 export const TestProvider = ({ children }: PropsWithChildren) => {
-	const queryClient = new QueryClient()
+	const queryClient = new QueryClient({
+		defaultOptions: {
+			queries: {
+				retry: false,
+				gcTime: Infinity,
+			},
+		},
+	})
 
 	return (
 		<QueryClientProvider client={queryClient}>
