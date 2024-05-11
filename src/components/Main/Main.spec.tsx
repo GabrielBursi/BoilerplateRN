@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/react-native'
-import { customRender } from '../../tests'
+import { customRender } from '@/tests'
 import { Main } from '.'
 
 describe('<Main/>', () => {
