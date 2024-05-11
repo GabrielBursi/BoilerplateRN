@@ -35,6 +35,17 @@ module.exports = {
 				sourceType: 'script',
 			},
 		},
+		{
+			files: ['*.ts', '*.tsx'],
+			extends: [
+				'plugin:@typescript-eslint/eslint-recommended',
+				'plugin:@typescript-eslint/recommended',
+				'plugin:@typescript-eslint/recommended-requiring-type-checking',
+			],
+			parserOptions: {
+				project: ['./tsconfig.json'],
+			},
+		},
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
