@@ -1,10 +1,9 @@
-import { ComponentProps } from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { TestProvider } from '@/providers'
 
 import { Main } from '.'
 
-const meta: Meta<ComponentProps<typeof Main>> = {
+const meta: Meta<typeof Main> = {
 	title: 'Main',
 	component: Main,
 	decorators: [
@@ -17,7 +16,7 @@ const meta: Meta<ComponentProps<typeof Main>> = {
 }
 export default meta
 
-type Story = StoryObj<ComponentProps<typeof Main>>
+type Story = StoryObj<typeof Main>
 
 export const Basic: Story = {
 	args: {},
