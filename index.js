@@ -9,8 +9,8 @@ async function setupDevEnv() {
 
 	import('./ReactotronConfig').then(() => console.log('Reactotron Configured'))
 	await import('./msw.polyfills')
-	const { server } = await import('./src/tests')
-	server.listen()
+	const { serverApiTest } = await import('./src/tests/server')
+	serverApiTest.listen()
 	return true
 }
 
