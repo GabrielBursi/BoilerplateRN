@@ -1,9 +1,11 @@
 import React from 'react'
-import { HomeProps } from '@/types/screens'
-import { Main } from '@/components'
+import { Text } from 'react-native'
+import * as S from './styles'
 
-//!
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const HomeScreen = ({ navigation, route }: HomeProps) => {
-	return <Main />
+export const HomeScreen = () => {
+	return (
+		<S.Home>
+			<Text accessibilityRole="text">Home</Text>
+		</S.Home>
+	)
 }
