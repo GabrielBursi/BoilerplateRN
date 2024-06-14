@@ -18,6 +18,7 @@
 		"ios": "react-native run-ios",
 		"start": "react-native start -- --reset-cache",
 		"dev": "react-native run-android --active-arch-only",
+		"doctor": "react-native doctor",
 		"test": "jest --passWithNoTests --maxWorkers=50% --verbose",
 		"test:watch": "jest --watchAll --maxWorkers=25% --verbose",
 		"e2e:build": "detox build --configuration android.emu.debug",
