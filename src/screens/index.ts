@@ -1,1 +1,3 @@
-export * from './Home'
+import { lazy } from 'react';
+
+export const HomeScreen = lazy(() => import('@/screens/Home'))
