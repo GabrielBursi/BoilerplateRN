@@ -4,7 +4,7 @@ import { Text } from 'react-native'
 import { {{pascalCase name}}Props } from './types'
 import * as S from './styles'
 
-export const {{pascalCase name}} = ({ }: {{pascalCase name}}Props) => {
+export const {{pascalCase name}} = ({ }: Readonly<{{pascalCase name}}Props>) => {
     return (
         <S.{{pascalCase name}}>
             <Text accessibilityRole="text">{{pascalCase name}}</Text>
