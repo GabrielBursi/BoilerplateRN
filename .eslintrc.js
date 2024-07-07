@@ -22,7 +22,8 @@ module.exports = {
 		"plugin:jest-formatting/recommended",
 		"plugin:jest/recommended",
 		"plugin:jest/style",
-		"plugin:react-native/all"
+		"plugin:react-native/all",
+		"plugin:@tanstack/eslint-plugin-query/recommended"
 	],
 	overrides: [
 		{
