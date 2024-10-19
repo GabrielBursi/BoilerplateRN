@@ -2,7 +2,7 @@ import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
 import { RootTabParamList } from '@/types/routes'
-import { HomeScreen } from '@/screens'
+import HomeScreen from '@/screens/Home'
 
 const Tab = createBottomTabNavigator<RootTabParamList>()
 

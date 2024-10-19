@@ -2,13 +2,13 @@ import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 
 import { RootStackParamList } from '@/types/routes'
-import { HomeScreen } from '@/screens'
+import HomeScreen from '@/screens/Home'
 
 const Stack = createStackNavigator<RootStackParamList>()
 
 export const StackRouter = () => {
 	return (
-		<Stack.Navigator>
+		<Stack.Navigator initialRouteName="Home">
 			<Stack.Screen name="Home" component={HomeScreen} />
 		</Stack.Navigator>
 	)
