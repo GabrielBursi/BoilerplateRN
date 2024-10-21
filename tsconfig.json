@@ -38,10 +38,12 @@
 			"@/*": ["src/*"]
 		}
 	},
-	"include": [".jest/setup.ts", "**/*.ts", "**/*.tsx", "ReactotronConfig.js", "jest.config.ts"],
-	"exclude": [
-		"node_modules",
-		"babel.config.js",
-		"metro.config.js",
-	]
+	"include": [
+		".jest/setup.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		"ReactotronConfig.js",
+		"jest.config.ts"
+	],
+	"exclude": ["node_modules", "babel.config.js", "metro.config.js"]
 }
