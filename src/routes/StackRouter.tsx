@@ -2,7 +2,7 @@ import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 
 import { RootStackParamList } from '@/types/routes'
-import HomeScreen from '@/screens/Home'
+import HomeScreen from '@/screens/Home/Home'
 
 const Stack = createStackNavigator<RootStackParamList>()
 
