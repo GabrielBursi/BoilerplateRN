@@ -16,7 +16,7 @@ export default function (plop) {
         actions: [
             {
                 type: 'add',
-                path: '../src/components/{{pascalCase name}}/index.tsx',
+								path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.tsx',
                 templateFile: 'templates/components/index.tsx.hbs'
             },
             {
@@ -26,7 +26,7 @@ export default function (plop) {
             },
             {
                 type: 'add',
-                path: '../src/components/{{pascalCase name}}/styles.ts',
+								path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.styles.ts',
                 templateFile: 'templates/components/styles.ts.hbs'
             },
             {
@@ -36,7 +36,7 @@ export default function (plop) {
             },
             {
                 type: 'add',
-                path: '../src/components/{{pascalCase name}}/types.ts',
+								path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.types.ts',
                 templateFile: 'templates/components/types.ts.hbs'
             }
         ]

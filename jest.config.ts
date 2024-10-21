@@ -10,7 +10,9 @@ const config: Config = {
 	transformIgnorePatterns: ['node_modules/(?!@react-native|react-native)'],
 	roots: ['<rootDir>/src'],
 	collectCoverageFrom: [
-		'src/components/**/index.tsx',
+		'src/components/**/**.tsx',
+		'!src/components/**/**.stories.tsx',
+		'!src/components/**/**.spec.tsx',
 		'src/screens/**/index.tsx',
 		'src/templates/**/index.tsx',
 		'src/hooks/**/**.tsx',

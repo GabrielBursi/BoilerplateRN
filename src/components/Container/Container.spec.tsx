@@ -1,12 +1,10 @@
-import { Text } from 'react-native'
 import { screen } from '@testing-library/react-native'
-
+import { Text } from 'react-native'
 import { customRender } from '@/tests/utils'
-
-import { Container } from '.'
+import { Container } from './Container'
 
 describe('<Container/>', () => {
-	it('should render correctly', () => {
+	it('should render', () => {
 		customRender(
 			<Container>
 				<Text>Container</Text>
