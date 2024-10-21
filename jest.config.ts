@@ -13,6 +13,7 @@ const config: Config = {
 		'src/components/**/index.tsx',
 		'src/screens/**/index.tsx',
 		'src/templates/**/index.tsx',
+		'src/hooks/**/**.tsx',
 	],
 }
 
