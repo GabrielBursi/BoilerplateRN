@@ -16,6 +16,13 @@ global.STORIES = [
     importPathMatcher:
       "^\\.[\\\\/](?:src[\\\\/]components(?:[\\\\/](?!\\.)(?:(?:(?!(?:^|[\\\\/])\\.).)*?)[\\\\/]|[\\\\/]|$)(?!\\.)(?=.)[^\\\\/]*?\\.stories\\.(ts|tsx))$",
   },
+  {
+    titlePrefix: "",
+    directory: "./src/screens",
+    files: "**/*.stories.@(ts|tsx)",
+    importPathMatcher:
+      "^\\.[\\\\/](?:src[\\\\/]screens(?:[\\\\/](?!\\.)(?:(?:(?!(?:^|[\\\\/])\\.).)*?)[\\\\/]|[\\\\/]|$)(?!\\.)(?=.)[^\\\\/]*?\\.stories\\.(ts|tsx))$",
+  },
 ];
 
 import "@storybook/addon-ondevice-notes/register";
@@ -49,7 +56,8 @@ try {
 
 const getStories = () => {
   return {
-    "./src/components/Main/Main.stories.tsx": require("../src/components/Main/Main.stories.tsx"),
+    "./src/components/Container/Container.stories.tsx": require("../src/components/Container/Container.stories.tsx"),
+    "./src/screens/Home/Home.stories.tsx": require("../src/screens/Home/Home.stories.tsx"),
   };
 };
 
