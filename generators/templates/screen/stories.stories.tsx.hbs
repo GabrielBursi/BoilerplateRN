@@ -1,18 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { TestProvider } from '@/providers'
 
 import {{pascalCase name}}Screen  from "./{{pascalCase name}}";
 
 const meta: Meta<typeof {{pascalCase name}}Screen> ={
     title: 'Screens/{{pascalCase name}}Screen',
     component: {{pascalCase name}}Screen,
-		decorators: [
-			(Story) => (
-				<TestProvider>
-					<Story />
-				</TestProvider>
-			),
-		],
 		args: {},
 		argTypes: {},
 }

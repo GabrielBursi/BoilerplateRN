@@ -13,7 +13,6 @@ module.exports = {
 		'plugin:@typescript-eslint/recommended',
 		'plugin:@typescript-eslint/recommended-requiring-type-checking',
 		'prettier',
-		'plugin:storybook/recommended',
 		'plugin:styled-components-a11y/recommended',
 		'plugin:jsx-a11y/recommended',
 		'plugin:react-native/all',
@@ -23,7 +22,8 @@ module.exports = {
 		"plugin:jest/recommended",
 		"plugin:jest/style",
 		"plugin:react-native/all",
-		"plugin:@tanstack/eslint-plugin-query/recommended"
+		"plugin:@tanstack/eslint-plugin-query/recommended",
+		"plugin:storybook/recommended"
 	],
 	overrides: [
 		{
@@ -81,10 +81,10 @@ module.exports = {
 		'react-hooks/exhaustive-deps': 'warn',
 		'@typescript-eslint/explicit-module-boundary-types': 'off',
 		"jest/no-disabled-tests": "warn",
-    "jest/no-focused-tests": "error",
-    "jest/no-identical-title": "error",
-    "jest/prefer-to-have-length": "warn",
-    "jest/valid-expect": "error",
+		"jest/no-focused-tests": "error",
+		"jest/no-identical-title": "error",
+		"jest/prefer-to-have-length": "warn",
+		"jest/valid-expect": "error",
 		"jest/expect-expect": ["error", { "assertFunctionNames": ["expect"] }],
 		'testing-library/await-async-queries': 'error',
 		'testing-library/no-await-sync-queries': 'error',
