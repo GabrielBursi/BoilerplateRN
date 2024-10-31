@@ -5,13 +5,13 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { ThemeProvider } from 'styled-components/native'
 
-import { MMKVServices, initializeStorage } from '@/storage'
+import { MMKVStorage, initializeStorage } from '@/storage'
 import { theme } from '@/styles'
 
 export const AppProvider = ({ children }: PropsWithChildren) => {
 	const queryClient = new QueryClient()
 
-	initializeStorage(MMKVServices)
+	initializeStorage(MMKVStorage)
 
 	return (
 		<QueryClientProvider client={queryClient}>

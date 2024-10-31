@@ -10,18 +10,14 @@ Esse boilerplate leva em consideração que você já tenha seguidos todos os pa
 
 ## Quais pacotes vem com esse boilerplate
 
-* react-native-community/hooks
 * react-navigation
-* redux
 * react-query
 * axios
-* react-hook-form
 * react-native-config
 * react-native-gesture-handler
 * react-native-mmkv
 * react-native-reanimated
 * styled-components
-* zod
 * jest
 * detox
 * testing-library

@@ -1,8 +1,8 @@
-import { IStorageServices } from '@/types/storage'
+import { Storage } from '@/types/storage'
 export * from './MMKStorage'
 
-export let StorageServices: Readonly<IStorageServices>
+export let StorageApp: Readonly<Storage>
 
-export const initializeStorage = (storage: IStorageServices) => {
-	StorageServices = storage
+export const initializeStorage = (storage: Storage) => {
+	StorageApp = storage
 }

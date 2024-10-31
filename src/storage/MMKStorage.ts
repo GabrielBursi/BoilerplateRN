@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/require-await */
 import { MMKV } from 'react-native-mmkv'
-import { IStorageServices } from '@/types/storage'
+import { Storage } from '@/types/storage'
 
 export const storage = new MMKV()
 
-export const MMKVServices: IStorageServices = {
+export const MMKVStorage: Storage = {
 	GetItem: async (key) => {
 		const item = storage.getString(key)
 		if (item) {

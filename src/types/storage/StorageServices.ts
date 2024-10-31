@@ -1,5 +1,5 @@
-export interface IStorageServices {
-	GetItem: <T>(key: string) => Promise<T | null>
-	SetItem: <T>(key: string, value: T) => Promise<void>
+export interface Storage {
+	GetItem: <TItem>(key: string) => Promise<TItem | null>
+	SetItem: <TItem>(key: string, value: TItem) => Promise<void>
 	RemoveItem: (key: string) => Promise<void>
 }
