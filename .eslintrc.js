@@ -47,6 +47,40 @@ module.exports = {
 				project: ['./tsconfig.json'],
 			},
 		},
+		{
+			files: ['*.ts', '*.tsx'],
+			rules: {
+				'import/order': [
+					'error',
+					{
+						groups: ['external', 'builtin', 'internal', 'parent', 'sibling'],
+						pathGroups: [
+							{
+								pattern: 'react+(|-native)',
+								group: 'external',
+								position: 'before',
+							},
+							{
+								pattern: '@+(api|storage|routes|screens|components|hooks|theme|types|tests|utils|api|assets|providers|styles|templates)',
+								group: 'internal',
+								position: 'before',
+							},
+							{
+								pattern: './',
+								group: 'internal',
+								position: 'before',
+							},
+						],
+						pathGroupsExcludedImportTypes: ['react+(|-native)'],
+						alphabetize: {
+							order: 'asc',
+							caseInsensitive: true,
+						},
+						'newlines-between': 'always',
+					},
+				],
+			},
+		},
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -69,7 +103,8 @@ module.exports = {
 		"json-format",
 		"jest-formatting",
 		'jest',
-		'testing-library'
+		'testing-library',
+		"import"
 	],
 	rules: {
 		'no-empty-function': 'off',

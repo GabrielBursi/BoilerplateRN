@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 import { Dimensions } from 'react-native'
+
 import { lighten } from 'polished'
 import normalize from 'react-native-normalize'
 import { RFValue } from 'react-native-responsive-fontsize'

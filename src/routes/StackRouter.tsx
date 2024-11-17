@@ -1,8 +1,9 @@
 import React from 'react'
+
 import { createStackNavigator } from '@react-navigation/stack'
 
-import { RootStackParamList } from '@/types/routes'
 import HomeScreen from '@/screens/Home/Home'
+import { RootStackParamList } from '@/types/routes'
 
 const Stack = createStackNavigator<RootStackParamList>()
 

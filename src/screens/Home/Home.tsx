@@ -1,5 +1,6 @@
 import React from 'react'
 import { Text } from 'react-native'
+
 import * as S from './Home.styles'
 
 const HomeScreen = () => {
