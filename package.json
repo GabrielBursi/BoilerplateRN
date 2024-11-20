@@ -36,7 +36,7 @@
 		"prettier:write": "npx prettier --write **/*.{ts,tsx,json}",
 		"prettier:format": "prettier --check ./src",
 		"format": "npm run prettier:write && npm run lint",
-		"prepare": "husky",
+		"husky": "husky",
 		"storybook-generate": "sb-rn-get-stories"
 	},
 	"dependencies": {
