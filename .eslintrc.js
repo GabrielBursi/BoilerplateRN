@@ -23,7 +23,8 @@ module.exports = {
 		"plugin:jest/style",
 		"plugin:react-native/all",
 		"plugin:@tanstack/eslint-plugin-query/recommended",
-		"plugin:storybook/recommended"
+		"plugin:storybook/recommended",
+		"plugin:sonarjs/recommended-legacy"
 	],
 	overrides: [
 		{
@@ -104,13 +105,14 @@ module.exports = {
 		"jest-formatting",
 		'jest',
 		'testing-library',
-		"import"
+		"import",
+		"sonarjs"
 	],
 	rules: {
-		'no-empty-function': 'off',
-		'@typescript-eslint/no-empty-function': 'off',
-		'react/display-name': 'off',
-		'react/prop-types': 'off',
+		'no-empty-function': 'error',
+		'@typescript-eslint/no-empty-function': 'error',
+		'react/display-name': 'error',
+		'react/prop-types': 'error',
 		'prettier/prettier': 'error',
 		'react/react-in-jsx-scope': 'off',
 		'react-hooks/exhaustive-deps': 'warn',
@@ -125,7 +127,9 @@ module.exports = {
 		'testing-library/no-await-sync-queries': 'error',
 		'testing-library/no-debugging-utils': 'warn',
 		'testing-library/no-dom-import': 'off',
-		"better-styled-components/sort-declarations-alphabetically": 2
+		"better-styled-components/sort-declarations-alphabetically": 2,
+		"sonarjs/no-invalid-await": "off",
+		"sonarjs/todo-tag": "warn"
 	},
 	settings: {
 		react: {
