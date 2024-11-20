@@ -61,9 +61,9 @@ module.exports = {
 								position: 'before',
 							},
 							{
-								pattern: '@+(api|storage|routes|screens|components|hooks|theme|types|tests|utils|api|assets|providers|styles|templates)',
-								group: 'internal',
-								position: 'before',
+								"pattern": "@/**",
+								"group": "internal",
+								"position": "before"
 							},
 							{
 								pattern: './',
