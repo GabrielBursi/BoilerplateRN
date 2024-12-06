@@ -38,7 +38,8 @@
 		"prettier:format": "prettier --check ./src",
 		"format": "npm run prettier:write && npm run lint:fix",
 		"husky": "husky",
-		"storybook-generate": "sb-rn-get-stories"
+		"storybook-generate": "sb-rn-get-stories",
+		"typecheck": "npx tsc --noEmit"
 	},
 	"dependencies": {
 		"@react-native-async-storage/async-storage": "^1.22.0",
