@@ -19,6 +19,19 @@ const config: Config = {
 		'src/templates/**/index.tsx',
 		'src/hooks/**/**.tsx',
 	],
+	reporters: [
+		'default',
+		[
+			'./node_modules/jest-html-reporter',
+			{
+				pageTitle: 'Unit Tests',
+				outputPath: './coverage/unit-test-report.html',
+				dateFormat: 'dd/mm/yyyy',
+				includeFailureMsg: true,
+				sort: 'status',
+			},
+		],
+	],
 }
 
 export default config
